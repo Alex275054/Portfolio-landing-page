@@ -1,9 +1,8 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "mb";
-  src: url("../fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("../fonts/Montserrat-Bold.ttf") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: 700;
+  font-family: "geb";
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: local("☺"), url("../fonts/Gilroy-ExtraBold.ttf") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
   font-style: normal;
 }
 * {
@@ -78,9 +77,10 @@ html {
   }
 }
 .header {
-  position: fixed;
   margin: 0 auto;
   width: 100%;
+  position: fixed;
+  background-color: #fff;
 }
 .header .header__container {
   min-height: 90px;
@@ -135,15 +135,15 @@ html {
   margin-left: 20px;
   display: block;
 }
+.header .home__title {
+  display: none;
+}
 @media (max-width: 460px) {
-  .header body.lock {
-    overflow: hidden;
-  }
   .header .header {
-    background: transparent;
+    height: 50px;
   }
   .header .header__container {
-    background: transparent;
+    min-height: 50px;
   }
   .header .menu__list {
     overflow: auto;
@@ -175,7 +175,6 @@ html {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin-top: 65px;
   }
   .header .header__burger {
     display: block;
@@ -239,9 +238,13 @@ html {
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
     padding: 70px 20px 20px 10px;
+    overflow: auto;
   }
   .header .header__menu.active {
     top: 0;
+  }
+  .header body.lock {
+    overflow-y: hidden;
   }
 }
 
@@ -270,16 +273,17 @@ html {
     display: block;
   }
 }
-@media (max-width: 460px) {
-  #home .home__text {
-    margin-top: 65px;
-  }
-}
 #home .home__title {
   font-size: calc(32px + 0.9375vw);
   padding: 40px 0;
   line-height: 1;
+  font-family: "geb";
   font-weight: 700;
+}
+@media (max-width: 370px) {
+  #home .home__title {
+    display: none;
+  }
 }
 #home .home__sub-title {
   font-size: calc(14px + 0.25vw);
@@ -329,8 +333,14 @@ html {
   padding: 120px 0 110px 0;
   text-align: center;
 }
+#about .about__title {
+  margin-bottom: 20px;
+  font-family: "geb";
+  font-size: 34px;
+}
 #about .about__text {
   text-align: center;
+  font-weight: 500;
 }
 #about .about__text:not(:last-child) {
   margin-bottom: 20px;
@@ -414,10 +424,16 @@ html {
   text-decoration: none;
 }
 #contacts .contacts__local-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 45px;
-}
-#contacts .contacts__local-item {
-  cursor: pointer;
 }
 .popup.open {
   opacity: 1;
