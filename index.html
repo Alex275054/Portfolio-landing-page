@@ -9,39 +9,39 @@
 	<link rel="stylesheet" href="css/stye.css">
 </head>
 
-<body>
+<body class="body">
 
 	<div class="wrapper">
 		<div class="page">
-			<div class="header">
-				<div class="header__container">
-					<nav class="header__nav header__body">
-						<h1 class="home__title">Denis <br> Novik</h1>
-						<div class="header__burger">
-							<span></span>
-						</div>
-						<ul class="header__items menu__list header__menu">
-							<a href="#home" class="header__link">
-								<li class="header__item">Home</li>
-							</a>
-							<a href="#about" class="header__link">
-								<li class="header__item">About me</li>
-							</a>
-							<a href="#skills" class="header__link">
-								<li class="header__item">Skills</li>
-							</a>
-							<a href="#portfolio" class="header__link">
-								<li class="header__item">Portfolio</li>
-							</a>
-							<a href="#contacts" class="header__link">
-								<li class="header__item">Contacts</li>
-							</a>
-						</ul>
-					</nav>
 
-					<hr class="header__line">
-				</div>
-			</div>
+					<div class="header">
+						<div class='header__container _container'>
+							<div class="header__nav">
+								<nav class="header__list header__menu header__menu-lg">
+									<ul class="header__list ">
+										<a href="#home" class="header__link">
+											<li class="_header__item header__link">Home</li>
+										</a>
+										<a href="#about" class="header__link">
+											<li class="_header__item header__link">About me</li>
+										</a>
+										<a href="#skills" class="header__link">
+											<li class="_header__item header__link">Skills</li>
+										</a>
+										<a href="#portfolio" class="header__link">
+											<li class="_header__item header__link">Portfolio</li>
+										</a>
+										<a href="#contacts" class="header__link">
+											<li class="_header__item header__link">Contacts</li>
+										</a>
+									</ul>
+								</nav>
+							</div>
+							<div class="header__burger">
+								<span></span>
+							</div>
+						</div>
+					</div>	
 			<section class="main">
 				<section id="home">
 					<div class="home__container">
@@ -103,8 +103,7 @@
 										<div class="popup__content">
 											<a href="#header" class="popup__close close-popup">X</a>
 											<div>
-												<img src="img/portfolio/01.png" alt=""
-													class="portfolio__img portfolio__img-popup-1">
+												<img src="img/portfolio/01.png" alt="" class="portfolio__img portfolio__img-popup-1">
 											</div>
 										</div>
 									</div>
@@ -153,62 +152,9 @@
 				<button class="contacts__btn">
 					<a href="#popup-contact" class="popup-link">Send message</a>
 				</button>
-				<div class="popup" id="popup-contact">
-					<a href="#advantages" class="popup__area"></a>
-					<div class="popup__body">
-						<div class="popup__content">
-							<a href="#header" class="popup__close close-popup">X</a>
-							<div class="popup__title popup-link">Напишите нам</div><br>
-							<div>
-								<textarea class="popup__text" name="" id="" placeholder="Ввкдите Ваше сообщение" cols="30"
-									rows="10"></textarea>
-								<button class="popup__btn-contact">Отправить</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="popup" id="popup-contact">
-					<a href="#advantages" class="popup__area"></a>
-					<div class="popup__body">
-						<div class="popup__content">
-							<a href="#header" class="popup__close close-popup">X</a>
-							<div class="popup__title popup-link">Напишите нам</div><br>
-							<div>
-								<textarea class="popup__text" name="" id="" placeholder="Ввкдите Ваше сообщение" cols="30"
-									rows="10"></textarea>
-								<button class="popup__btn-contact">Отправить</button>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="contacts__local-items">
 					<div class="contacts__local-item">
-						<div class="contacts__item-img">
-							<a href="#" class="contacts__local-link">
-								<img src="img/contacts/in.png" alt="" class="contacts__img-item">
-							</a>
-						</div>
-					</div>
-					<div class="contacts__local-item">
-						<div class="contacts__item-img">
-							<a href="#" class="contacts__local-link">
-								<img src="img/contacts/inst.png" alt="" class="contacts__img-item">
-							</a>
-						</div>
-					</div>
-					<div class="contacts__local-item">
-						<div class="contacts__item-img">
-							<a href="#" class="contacts__local-link">
-								<img src="img/contacts/be.png" alt="" class="contacts__img-item">
-							</a>
-						</div>
-					</div>
-					<div class="contacts__local-item">
-						<div class="contacts__item-img">
-							<a href="#" class="contacts__local-link">
-								<img src="img/contacts/ball.png" alt="" class="contacts__img-item">
-							</a>
-						</div>
+						<img src="img/contacts/01.png" alt="" class="contacts__local-img">
 					</div>
 				</div>
 				<div class="contacts__footer">
@@ -216,7 +162,21 @@
 				</div>
 			</div>
 		</section>
-
+		<div class="popup" id="popup-contact">
+			<a href="#advantages" class="popup__area"></a>
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup">X</a>
+					<div class="popup__title popup-link">Напишите нам</div><br>
+					<div>
+						<textarea class="popup__text" name="" id="" placeholder="Ввкдите Ваше сообщение" cols="30"
+							rows="10"></textarea>
+						<button class="popup__btn-contact">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 
 	</div>

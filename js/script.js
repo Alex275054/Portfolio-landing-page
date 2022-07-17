@@ -1,8 +1,31 @@
+// достаем из html документа класс header__burger при помощи DOM и создаем переменную
+let buttonBlock = document.querySelector('.header__burger')
+
+// достаем из html документа класс body и создаем переменную
+let bodyBlock = document.querySelector('.body')
+
+// достаем из wrapper документа класс body и создаем переменную
+
+let htmlBlock = document.querySelector('html')
+
+// ? Прописываем функию блкировки 
+function blockBodyFunck() {
+   // вешаем событие click на кнопку
+   buttonBlock.addEventListener('click', function (e) {
+      // при клике на кнопку присваиваем акктивный класс для body
+      htmlBlock.classList.toggle('lock')
+      // при клике на кнопку присваиваем акктивный класс для wrapper
+
+   })
+}
+blockBodyFunck()
+
+
 // бургер
 $(document).ready(function () {
    $('.header__burger').click(function (event) {
       $('.header__burger,.header__menu').toggleClass('active');
-      $('body').toggleClass('lock');
+      
    });
 });
 
@@ -38,7 +61,6 @@ if (popupCloseIcon.length > 0) {
       })
    }
 }
-
 
 function popupOpen(curentPopup) {
    if (curentPopup && unlock) {
